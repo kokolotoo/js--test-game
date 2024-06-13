@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+
+    <h1 class="header">
+        CodeQuest: JavaScript Adventures
+    </h1>
+    <div class="container">
+
+        <div class="login" id="login_form">
+            <h1>Login</h1>
+            <form action="">
+
+                <input type="email" placeholder="Enter email" id="login_mail" required autocomplete="off">
+                <br><br><input type="password" placeholder="Enter password" id="pass_login" required autocomplete="off">
+                <br> <span>Shown pass</span> <input type="checkbox" name="checkbox" id="checkbox1">
+
+            </form>
+            <br> <button onclick="login()" class="login_button">Login</button>
+            <br><br> <button id="register_button" class="registerButton">Registration</button>
+            <br><br><button class="forgotPassButton" id="forgotPassword_button">Forgot password</button>
+        </div>
+
+        <div class="registration" id="register_form">
+            <h1>Registration</h1>
+            <form action="">
+
+                <input type="email" placeholder="Enter email" id="mail_register" required autocomplete="off">
+                <input type="text" placeholder="Enter nickname" id="nickname_register" required>
+                <br><input type="password" placeholder="Enter password" id="pass1" required autocomplete="off">
+                <input type="password" placeholder="Confirm password" id="pass2" required autocomplete="off">
+                <br> <input type="text" placeholder="Enter Secret Question" id="question" required>
+                <input type="text" placeholder="Enter an answer" id="answer" required autocomplete="off">
+                <br> <span>Shown pass</span> <input type="checkbox" name="checkbox" id="checkbox2">
+
+            </form>
+            <button onclick="registration()" class="regButton">Registration</button>
+            <button class="register_back" id="registerBackButton">Login</button>
+        </div>
+
+        <div class="forgodPassword" id="forgotPassword_form">
+            <p class="infoText">Enter email and press Submit</p>
+            <input type="email" name="mail" id="forgotMail" placeholder="Enter email" autocomplete="off">
+            <br><br> <button class="submitButton" id="submit_button">Submit</button>
+            <button class="backButton" id="back_button">Login</button>
+        </div>
+
+        <div class="shownPass" id="shown_pass">
+            <p id="secret_question"></p>
+            <input type="text" id="secret_answer" placeholder="Enter answer" autocomplete="off">
+            <p>You password is:</p>
+            <p id="pass_text"></p>
+            <button class="shownButton" id="shown_button">shown password</button>
+            <br> <br><button class="returnButton" id="return_button">Login</button>
+        </div>
+
+    </div>
+
+
+    <div class="footer">
+        <p>© 2024 CodeQuest</p>
+    </div>
+
+
+    <script src="scripts/index.js"></script>
+</body>
+
+</html>
